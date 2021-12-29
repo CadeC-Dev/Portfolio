@@ -1,27 +1,23 @@
 import React from 'react'
 import CustomBtn from './CustomBtn'
-import logo from '../logo.svg'
-import logoMobile from '../logoMobile.svg'
+import logo from '../logo.png'
 import { Toolbar,Typography } from '@material-ui/core' 
 import { makeStyles } from '@material-ui/core/styles'
 
 const styles = makeStyles({
     bar:{
-        paddingTop: "1.15rem",
-        backgroundColor: "#fff",
+        paddingTop: "1rem",
+        paddingBottom: "1rem"
     },
     logo: {
         width: "15%", 
     },
-    logoMobile:{
-        width: "100%", 
-        display: "none", 
-    },
     menuItem: {
         cursor: "pointer", 
         flexGrow: 1,
+        color: "#0066E6",
         "&:hover": {
-            color:  "#4f25c8"
+            color:  "#F7BAFF"
         },
     }
 })
@@ -30,24 +26,17 @@ export default function NavBar() {
     const classes = styles()
     return (
             <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}>   
-                <img src={logo} alt="logo" className={classes.logo}/> 
-                <img src={logoMobile} alt="logoMobile" className={classes.logoMobile}/> 
+                <img src={logo} alt="logo" className={classes.logo}/>  
                 <Typography variant="h6" className={classes.menuItem}>
                    About
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    Blog
+                    Resume
                 </Typography>
                 <Typography variant="h6" className={classes.menuItem}>
-                    Careers
+                    Career Timeline
                 </Typography>
-                <Typography variant="h6" className={classes.menuItem}>
-                    Demos 
-                </Typography>
-                <Typography variant="h6" className={classes.menuItem}>
-                    Contact Us 
-                </Typography>
-                <CustomBtn txt="Trial Our Product"/>
+                <CustomBtn txt="Contact Me!"/>
             </Toolbar>
     )
 }

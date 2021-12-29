@@ -22,7 +22,7 @@ export default function Grid(props) {
     return (
         <div className={classes.wrapper}>
             <div className={classes.item}>{icon}</div>
-            <Typography className={classes.item} variant='h5'>{title}</Typography>
+            <Typography className={classes.item} variant='h5' color='#0066E6'>{title}</Typography>
             <div className={classes.item}>
                 <CustomBtn txt={btnTitle}/>
             </div>

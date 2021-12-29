@@ -14,7 +14,7 @@ import HttpIcon from '@material-ui/icons/Http';
 const theme = createTheme({
   palette: {
     primary: {
-      main:"#2e1667",
+      main:"#0066E6",
     },
     secondary: {
       main:"#c7d8ed",
@@ -65,10 +65,10 @@ function App() {
         <NavBar/>
         <div className={classes.wrapper}>
           <Typography variant="h4" className={classes.bigSpace} color="primary">
-             At Rocket.io we are passionate about software
+             Welcome to Cade's Portfolio site!
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales congue tristique. Cras non pretium sem. Duis interdum lorem sit amet ligula pretium, sed rutrum urna semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus egestas gravida ullamcorper.
+             This will be a place for me to store all of my development information for anyone to see.
           </Typography>
         </div>
         <div className={`${classes.grid} ${classes.bigSpace}`}>
